@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GigaHertz</title>
+    <title>GigaHertz - Product</title>
     <script src="functions.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,6 +13,168 @@
 </head>
 
 <body>
-    
+    <header>
+      <div id="topRow">
+        <div id="leftSide">
+          <img src="assets//Logo.png" id="logo" />
+          <div id="menuDiv">
+            <h2 onclick="showMenu()" onmouseover="showMenu()">Produtos</h2>
+
+            <section id="dropdown">
+              <ul id="categories">
+                <li><h3>Categorias</h3></li>
+                <li>
+                  <a href="generic_search.html"> IEM's </a>
+                </li>
+                <li>
+                  <a href="generic_search.html"> Headphones </a>
+                </li>
+                <li>
+                  <a href="generic_search.html"> Interfaces </a>
+                </li>
+                <li>
+                  <a href="generic_search.html"> Amplificadores </a>
+                </li>
+                <li>
+                  <a href="generic_search.html"> DAP </a>
+                </li>
+                <li>
+                  <a href="generic_search.html"> Acessorios </a>
+                </li>
+              </ul>
+              <ul id="brands">
+                <li><h3>Marcas</h3></li>
+                <li>
+                  <a href="generic_search.html"> 7hz </a>
+                </li>
+                <li>
+                  <a href="generic_search.html"> Truthear </a>
+                </li>
+                <li>
+                  <a href="generic_search.html"> Linsoul </a>
+                </li>
+                <li>
+                  <a href="generic_search.html"> Sennheiser </a>
+                </li>
+                <li>
+                  <a href="generic_search.html"> Moondrop </a>
+                </li>
+                <li>
+                  <a href="generic_search.html"> HiBy </a>
+                </li>
+              </ul>
+              <ul id="driver">
+                <li><h3>Drivers</h3></li>
+                <li>
+                  <a href="generic_search.html"> Dinamico </a>
+                </li>
+                <li>
+                  <a href="generic_search.html"> Armadura balanceada </a>
+                </li>
+                <li>
+                  <a href="generic_search.html"> Magnéticos planares </a>
+                </li>
+                <li>
+                  <a href="generic_search.html"> Eletrostáticos </a>
+                </li>
+                <li>
+                  <a href="generic_search.html"> Hibridos </a>
+                </li>
+                <li>
+                  <a href="generic_search.html"> Condução Óssea </a>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+        <input type="text" id="pesquisar" placeholder="Pesquisar " />
+        <!-- &#x1F50E -->
+        <div id="rightSide">
+          <div id="btnContainer">
+            <h4>Tema Escuro:</h4>
+            <button id="btn" onclick="changeColor()">
+              <div id="ball"></div>
+            </button>
+          </div>
+          <a href="" id="carrinho">Carrinho</a>
+          <div id="userDiv">
+            <svg viewBox="-32 0 512 512" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="product-content">
+      <h1>Product Details</h1>
+      <p>Product information goes here.</p>
+    </section>
+
+    <footer>
+      <ul>
+        <li>
+          <a href="#"><h2>GigaHertz</h2></a>
+        </li>
+        <li><a href="aboutUs.html"> > Sobre Nós</a></li>
+        <li><a href="contact.html"> > Entre em contato</a></li>
+        <li><a href="contact.html"> > Entre em contato</a></li>
+        <li><a href="contact.html"> > Entre em contato</a></li>
+        <li><a href="contact.html"> > Entre em contato</a></li>
+      </ul>
+      <ul id="categories">
+        <li><h3>Categorias</h3></li>
+        <li>
+          <a href="generic_search.html"> > IEM's </a>
+        </li>
+        <li>
+          <a href="generic_search.html"> > Headphones </a>
+        </li>
+        <li>
+          <a href="generic_search.html"> > Interfaces </a>
+        </li>
+        <li>
+          <a href="generic_search.html"> > Amplificadores </a>
+        </li>
+        <li>
+          <a href="generic_search.html"> > DAP </a>
+        </li>
+        <li>
+          <a href="generic_search.html"> > Acessorios </a>
+        </li>
+      </ul>
+      <ul id="brands">
+        <li><h2>Marcas</h2></li>
+        <li>
+          <a href="generic_search.html"> > 7hz </a>
+        </li>
+        <li>
+          <a href="generic_search.html"> > Truthear </a>
+        </li>
+        <li>
+          <a href="generic_search.html"> > Linsoul </a>
+        </li>
+        <li>
+          <a href="generic_search.html"> > Sennheiser </a>
+        </li>
+        <li>
+          <a href="generic_search.html"> > Moondrop </a>
+        </li>
+        <li>
+          <a href="generic_search.html"> > HiBy </a>
+        </li>
+      </ul>
+      <div>
+        <img id="footerLogo" src="assets/Logo.png" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita
+          nihil, dicta, aliquid eligendi ipsa corporis reiciendis facilis libero
+          dolores id consequatur. Fugiat, nobis molestias. Unde quis in
+          consectetur nemo?
+        </p>
+      </div>
+    </footer>
 </body>
 </html>

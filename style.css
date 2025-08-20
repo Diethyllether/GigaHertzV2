@@ -57,7 +57,7 @@
                             display: grid;
                             grid-template-columns: repeat(4, 1fr);
                             justify-items: center;
-                            position: fixed;
+                            position: absolute;
                             left: 0;
                             top: -500px;
                             z-index: -5;
