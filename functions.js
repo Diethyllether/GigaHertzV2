@@ -3,6 +3,7 @@
 function changeColor() {
   const root = document.documentElement;
   const logo = document.getElementById("logo");
+  const logo2 = document.getElementById("footerLogo");
   const btn = document.getElementById("ball");
   switch (localStorage.getItem("theme")) {
     case "dark":
@@ -12,6 +13,7 @@ function changeColor() {
       root.style.setProperty("--text-color", "black");
       root.style.setProperty("--btn-bg", "white");
       logo.src = "assets//logo-alt.png";
+      logo2.src = "assets//logo-alt.png";
       btn.style.marginLeft = "0px";
       localStorage.setItem("theme", "light");
       break;
@@ -23,6 +25,7 @@ function changeColor() {
       root.style.setProperty("--text-color", "white");
       root.style.setProperty("--btn-bg", "green");
       logo.src = "assets//logo.png";
+      logo2.src = "assets//logo.png";
       btn.style.marginLeft = "15px";
       localStorage.setItem("theme", "dark");
       break;

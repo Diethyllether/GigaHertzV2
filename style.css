@@ -11,6 +11,7 @@
     padding: 0;
     box-sizing: border-box;
     color: var(--text-color);
+    scroll-behavior: smooth;
 
     a {
         text-decoration: none;
@@ -165,6 +166,7 @@
             align-items: center;
             justify-content: center;
             display: flex;
+            border-bottom: 1px solid var(--secondary-color);
 
             background-image: url(assets/placeholder.jpg);
             background-repeat: no-repeat;
@@ -188,14 +190,67 @@
             }
         }
 
+        #highlights {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 5%;
+
+            &>h1 {
+                margin: 2% 0;
+            }
+
+            #sale {
+                width: 70%;
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                gap: 30px;
+                padding: 1% 0%;
+                margin-bottom: 2%;
+                border-bottom: var(--secondary-color) 3px solid;
+                border-top: var(--secondary-color) 3px solid;
+
+                &>div {
+                    width: auto;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            #new {
+                width: 70%;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+                gap: 20px;
+
+                &>div {
+                    width: auto;
+                    border-radius: 8px;
+                    transition: .5s all;
+
+                    &:hover {
+                        background-color: rgba(0, 0, 0, 0.5);
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
         footer {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             justify-items: center;
             width: 100%;
-            height: 50vh;
+            height: 30vh;
+            border-top: 1px solid var(--secondary-color);
 
-            &>*{
+            &>* {
                 margin-top: 10%;
             }
 
