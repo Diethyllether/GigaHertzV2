@@ -11,7 +11,7 @@ function changeColor() {
       root.style.setProperty("--secondary-color", "#3185FC");
       root.style.setProperty("--text-color", "black");
       root.style.setProperty("--btn-bg", "white");
-      logo.src = "assets/images/logo-alt.png";
+      logo.src = "assets//logo-alt.png";
       btn.style.marginLeft = "0px";
       localStorage.setItem("theme", "light");
       break;
@@ -22,8 +22,11 @@ function changeColor() {
       root.style.setProperty("--secondary-color", "#FF3D10");
       root.style.setProperty("--text-color", "white");
       root.style.setProperty("--btn-bg", "green");
-      logo.src = "assets/images/logo.png";
+      logo.src = "assets//logo.png";
       btn.style.marginLeft = "15px";
+      localStorage.setItem("theme", "dark");
+      break;
+    default:
       localStorage.setItem("theme", "dark");
       break;
   }
